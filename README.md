@@ -1,4 +1,4 @@
-# SAN
+# Scale Adaptive Network
 Official implementation of Scale Adaptive Network (SAN) as described in [Learning to Learn Parameterized Classification Networks for Scalable Input Images]() (ECCV'20) by  [Duo Li](https://github.com/d-li14), [Anbang Yao](https://github.com/YaoAnbang) and [Qifeng Chen](https://github.com/CQFIO) on the [ILSVRC 2012](http://www.image-net.org) benchmark.
 
 <p align="center"><img src="fig/schema.png" width="800" /></p>
@@ -18,7 +18,7 @@ Download the ImageNet dataset and move validation images to labeled subfolders. 
 
 ## Pre-trained Models
 
-### Baseline
+### Baseline (individually trained on each resolution)
 
 #### ResNet-18
 
@@ -85,6 +85,8 @@ python imagenet.py \
 ```
 
 ## Testing
+
+Using the previously downloaded checkpoint file from [here](https://github.com/d-li14/SAN#san) for inference.
 
 ### Proxy Inference (default)
 
