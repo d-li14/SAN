@@ -5,6 +5,8 @@ Official implementation of Scale Adaptive Network (SAN) as described in [Learnin
 
 We present a meta learning framework which dynamically parameterizes main networks conditioned on its input resolution at runtime, leading to efficient and flexible inference for arbitrarily switchable input resolutions.
 
+<p align="center"><img src="fig/ablation.png" width="700" /></p>
+
 ## Requirements
 
 ### Dependency
@@ -63,7 +65,7 @@ python imagenet.py \
     --epochs 120 \
     --lr-decay cos \
     -c <path-to-save-checkpoints> \
-    --sizes <list-of-input-resolutions> \
+    --sizes <list-of-input-resolutions> \ # default is 224, 192, 160, 128, 96
     -j <num-workers>
     --kd
 ```
@@ -79,14 +81,12 @@ python imagenet.py \
     --lr 0.05 \
     --wd 4e-5 \
     -c <path-to-save-checkpoints> \
-    --sizes <list-of-input-resolutions> \
+    --sizes <list-of-input-resolutions> \ # default is 224, 192, 160, 128, 96
     -j <num-workers>
     --kd
 ```
 
 ## Testing
-
-Using the previously downloaded checkpoint file from [here](https://github.com/d-li14/SAN#san) for inference.
 
 ### Proxy Inference (default)
 
@@ -99,6 +99,11 @@ python imagenet.py \
     -e
     -j <num-workers>
 ```
+
+Arguments are:
+
+* `checkpoint-file`: previously downloaded checkpoint file from [here](https://github.com/d-li14/SAN#san).
+* `list-of-input-resolutions`: test resolutions using different privatized BNs.
 
 which gives Table 1 in the main paper and Table 5 in the supplementary materials.
 
