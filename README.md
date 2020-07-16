@@ -123,65 +123,76 @@ Manually set the scale encoding [here](https://github.com/d-li14/SAN/blob/master
 
 <table>
     <tr>
-        <td width="30%">
+        <td width="50%">
             <table>
                 <tr>
                     <td align="center">Method</td>
+                    <td align="center">Config (width-resolution)</td>
                     <td align="center">MFLOPs</td>
                     <td align="center">Top-1 Acc.</td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">1.0-224<br>1.0-224</td>
                     <td align="center">300<br>300</td>
                     <td align="center"><b>73.0</b><br>72.86</td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">0.9-224<br>1.0-208</td>
                     <td align="center">269<br>270</td>
                     <td align="center">72.4<br><b>72.42</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">1.0-192<br>1.0-192</td>
                     <td align="center">221<br>221</td>
                     <td align="center">71.9<br><b>72.22</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">0.9-192<br>1.0-176</td>
                     <td align="center">198<br>195</td>
                     <td align="center">71.5<br><b>71.63</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">0.75-192<br>1.0-160</td>
                     <td align="center">154<br>154</td>
                     <td align="center">70.2<br><b>71.16</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">0.9-160<br>1.0-144</td>
                     <td align="center">138<br>133</td>
                     <td align="center"><b>69.9</b><br>69.80</td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">1.0-128<br>1.0-128</td>
                     <td align="center">99<br>99</td>
                     <td align="center">67.8<br><b>69.14</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">0.85-128<br>1.0-112</td>
                     <td align="center">84<br>82</td>
                     <td align="center">66.1<br><b>66.59</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">0.7-128<br>1.0-96</td>
                     <td align="center">58<br>56</td>
                     <td align="center">64.3<br><b>65.07</b></td>
                 </tr>
             </table>
         </td>
-        <td width="40%" height="100%">
+        <td width="50%" height="100%">
             <img src="fig/comparison.png" />
         </td>
     </tr>
 </table>
+
 
 We observe that SAN surpasses MutualNet in most computational resource levels by merely switching the input resolution, without further tuing the network width. More importantly, SAN could perform dynamic inference under the desired computational budget in one run, while MutualNet first output a query table by running all possible configurations and then search the result from the query table.
 
