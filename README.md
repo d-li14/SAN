@@ -26,21 +26,21 @@ Download the ImageNet dataset and move validation images to labeled subfolders. 
 
 | Resolution | Top-1 Acc. | Download                                                     |
 | ---------- | ---------- | ------------------------------------------------------------ |
-| 224x224    | 70.974     | [link](https://drive.google.com/file/d/1rpOqyLsHi7xuB3XWuXfxE_hojs3zm_BR/view?usp=sharing) |
-| 192x192    | 69.754     | [link](https://drive.google.com/file/d/1fj3S-nzCzgXjIYUYAoA654HO1DNEl_4O/view?usp=sharing) |
-| 160x160    | 68.482     | [link](https://drive.google.com/file/d/1tb9rUsRcw5wWEDREw0Fi1TUTyP73NXjj/view?usp=sharing) |
-| 128x128    | 66.360     | [link](https://drive.google.com/file/d/1LD_s5jZixz8D3TJrjGGjBSKSWO7yb3XT/view?usp=sharing) |
-| 96x96      | 62.560     | [link](https://drive.google.com/file/d/1rfz9aJDJwaadQBmwvzdKwFeQLXSbQF-A/view?usp=sharing) |
+| 224x224    | 70.974     | [Google Drive](https://drive.google.com/file/d/1rpOqyLsHi7xuB3XWuXfxE_hojs3zm_BR/view?usp=sharing) |
+| 192x192    | 69.754     | [Google Drive](https://drive.google.com/file/d/1fj3S-nzCzgXjIYUYAoA654HO1DNEl_4O/view?usp=sharing) |
+| 160x160    | 68.482     | [Google Drive](https://drive.google.com/file/d/1tb9rUsRcw5wWEDREw0Fi1TUTyP73NXjj/view?usp=sharing) |
+| 128x128    | 66.360     | [Google Drive](https://drive.google.com/file/d/1LD_s5jZixz8D3TJrjGGjBSKSWO7yb3XT/view?usp=sharing) |
+| 96x96      | 62.560     | [Google Drive](https://drive.google.com/file/d/1rfz9aJDJwaadQBmwvzdKwFeQLXSbQF-A/view?usp=sharing) |
 
 ### ResNet-50
 
 | Resolution | Top-1 Acc. | Download                                                     |
 | ---------- | ---------- | ------------------------------------------------------------ |
-| 224x224    | 77.150     | [link](https://drive.google.com/file/d/1ywPABwm22RRfIFAeidO3hB83WCnjhAa6/view?usp=sharing) |
-| 192x192    | 76.406     | [link](https://drive.google.com/file/d/1psWXD4mkYFqrRzqq6sX54F8c1OxQe2Zo/view?usp=sharing) |
-| 160x160    | 75.312     | [link](https://drive.google.com/file/d/157WAFN1ExnQKFGZSSo7Dzc0ORJ4Ccr14/view?usp=sharing) |
-| 128x128    | 73.526     | [link](https://drive.google.com/file/d/1iC9XiEGKzvCdXYYOhHccdIDW9rQyBmBg/view?usp=sharing) |
-| 96x96      | 70.610     | [link](https://drive.google.com/file/d/14CJg1UQuO8iYrMzKWvWcNxxiL8bZlXwE/view?usp=sharing) |
+| 224x224    | 77.150     | [Google Drive](https://drive.google.com/file/d/1ywPABwm22RRfIFAeidO3hB83WCnjhAa6/view?usp=sharing) |
+| 192x192    | 76.406     | [Google Drive](https://drive.google.com/file/d/1psWXD4mkYFqrRzqq6sX54F8c1OxQe2Zo/view?usp=sharing) |
+| 160x160    | 75.312     | [Google Drive](https://drive.google.com/file/d/157WAFN1ExnQKFGZSSo7Dzc0ORJ4Ccr14/view?usp=sharing) |
+| 128x128    | 73.526     | [Google Drive](https://drive.google.com/file/d/1iC9XiEGKzvCdXYYOhHccdIDW9rQyBmBg/view?usp=sharing) |
+| 96x96      | 70.610     | [Google Drive](https://drive.google.com/file/d/14CJg1UQuO8iYrMzKWvWcNxxiL8bZlXwE/view?usp=sharing) |
 
 ### MobileNetV2
 
@@ -50,9 +50,9 @@ Please visit my repository [mobilenetv2.pytorch](https://github.com/d-li14/mobil
 
 | Architecture | Download                                                     |
 | ------------ | ------------------------------------------------------------ |
-| ResNet-18    | [link](https://drive.google.com/file/d/1JqJSxjD6rMOlxYY44D3QEWH23Lo6XuIF/view?usp=sharing) |
-| ResNet-50    | [link](https://drive.google.com/file/d/1Cci3_vAP_sXVwdUhhtZ2T07KDYUlW_B-/view?usp=sharing) |
-| MobileNetV2  | [link](https://drive.google.com/file/d/1rkl_pV0_HBCVhhwxa1FK6Ec6gxOsjvPT/view?usp=sharing) |
+| ResNet-18    | [Google Drive](https://drive.google.com/file/d/1JqJSxjD6rMOlxYY44D3QEWH23Lo6XuIF/view?usp=sharing) |
+| ResNet-50    | [Google Drive](https://drive.google.com/file/d/1Cci3_vAP_sXVwdUhhtZ2T07KDYUlW_B-/view?usp=sharing) |
+| MobileNetV2  | [Google Drive](https://drive.google.com/file/d/1rkl_pV0_HBCVhhwxa1FK6Ec6gxOsjvPT/view?usp=sharing) |
 
 ## Training
 
@@ -116,6 +116,10 @@ Uncomment [this line](https://github.com/d-li14/SAN/blob/master/imagenet.py#L239
 ### Data-Free Ideal Inference
 
 Manually set the scale encoding [here](https://github.com/d-li14/SAN/blob/master/models/imagenet/meta_resnet.py#L60) and its corresponding shift [here](https://github.com/d-li14/SAN/blob/master/imagenet.py#L124), then uncomment [this line](https://github.com/d-li14/SAN/blob/master/imagenet.py#L209) to replace its above line, which gives Table 6 in the supplementary materials.
+
+## Comparison to MutualNet
+
+[MutualNet: Adaptive ConvNet via Mutual Learning from Network Width and Resolution](https://arxiv.org/abs/1909.12978) is accpepted to ECCV 2020 as **oral**, which highly coincides with our SAN regarding the motivation. We provide a head-to-head comparison of top-1 validation accuracy on ImageNet in the following, based on the common MobileNetV2 backbone.
 
 ## Citation
 
