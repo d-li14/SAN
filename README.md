@@ -133,47 +133,47 @@ Manually set the scale encoding [here](https://github.com/d-li14/SAN/blob/master
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
                     <td align="center">300<br>300</td>
-                    <td align="center"><font color="red">73.0</font><br>72.86</td>
+                    <td align="center"><b>73.0</b><br>72.86</td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
                     <td align="center">269<br>270</td>
-                    <td align="center">72.4<br><font color="red">72.42</font></td>
+                    <td align="center">72.4<br><b>72.42</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
                     <td align="center">221<br>221</td>
-                    <td align="center">71.9<br><font color="red">72.22</font></td>
+                    <td align="center">71.9<br><b>72.22</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
                     <td align="center">198<br>195</td>
-                    <td align="center">71.5<br><font color="red">71.63</font></td>
+                    <td align="center">71.5<br><b>71.63</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
                     <td align="center">154<br>154</td>
-                    <td align="center">70.2<br><font color="red">71.16</font></td>
+                    <td align="center">70.2<br><b>71.16</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
                     <td align="center">138<br>133</td>
-                    <td align="center"><font color="red">69.9</font><br>69.80</td>
+                    <td align="center"><b>69.9</b><br>69.80</td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
                     <td align="center">99<br>99</td>
-                    <td align="center">67.8<br><font color="red">69.14</font></td>
+                    <td align="center">67.8<br><b>69.14</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
                     <td align="center">84<br>82</td>
-                    <td align="center">66.1<br><font color="red">66.59</font></td>
+                    <td align="center">66.1<br><b>66.59</b></td>
                 </tr>
                 <tr>
                     <td align="center">MutualNet<br>SAN</td>
                     <td align="center">58<br>56</td>
-                    <td align="center">64.3<br><font color="red">65.07</font></td>
+                    <td align="center">64.3<br><b>65.07</b></td>
                 </tr>
             </table>
         </td>
