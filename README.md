@@ -121,19 +121,67 @@ Manually set the scale encoding [here](https://github.com/d-li14/SAN/blob/master
 
 [MutualNet: Adaptive ConvNet via Mutual Learning from Network Width and Resolution](https://arxiv.org/abs/1909.12978) is accpepted to ECCV 2020 as **oral**, which highly coincides with our SAN regarding the motivation. We provide a head-to-head comparison of top-1 validation accuracy on ImageNet in the following, based on the common MobileNetV2 backbone.
 
-| Method            | FLOPs      | Top-1 Acc.        |
-| ----------------- | ---------- | ----------------- |
-| MutualNet<br>SAN  | 300<br>300 | **73.0**<br>72.86 |
-| MutualNet<br/>SAN | 269<br>270 | 72.4<br>**72.42** |
-| MutualNet<br/>SAN | 221<br>221 | 71.9<br>**72.22** |
-| MutualNet<br/>SAN | 198<br>195 | 71.5<br>**71.63** |
-| MutualNet<br/>SAN | 154<br>154 | 70.2<br>**71.16** |
-| MutualNet<br/>SAN | 138<br>133 | **69.9**<br>69.80 |
-| MutualNet<br/>SAN | 99<br>99   | 67.8<br>**69.14** |
-| MutualNet<br/>SAN | 84<br>82   | 66.1<br>**66.59** |
-| MutualNet<br/>SAN | 58<br>56   | 64.3<br>65.07     |
-
-<p align="center"><img src="fig/comparison.png" width="500" /></p>
+<table>
+    <tr>
+        <td width="30%">
+            <table>
+                <tr>
+                    <td align="center">Method</td>
+                    <td align="center">MFLOPs</td>
+                    <td align="center">Top-1 Acc.</td>
+                </tr>
+                <tr>
+                    <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">300<br>300</td>
+                    <td align="center"><font color="red">73.0</font><br>72.86</td>
+                </tr>
+                <tr>
+                    <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">269<br>270</td>
+                    <td align="center">72.4<br><font color="red">72.42</font></td>
+                </tr>
+                <tr>
+                    <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">221<br>221</td>
+                    <td align="center">71.9<br><font color="red">72.22</font></td>
+                </tr>
+                <tr>
+                    <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">198<br>195</td>
+                    <td align="center">71.5<br><font color="red">71.63</font></td>
+                </tr>
+                <tr>
+                    <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">154<br>154</td>
+                    <td align="center">70.2<br><font color="red">71.16</font></td>
+                </tr>
+                <tr>
+                    <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">138<br>133</td>
+                    <td align="center"><font color="red">69.9</font><br>69.80</td>
+                </tr>
+                <tr>
+                    <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">99<br>99</td>
+                    <td align="center">67.8<br><font color="red">69.14</font></td>
+                </tr>
+                <tr>
+                    <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">84<br>82</td>
+                    <td align="center">66.1<br><font color="red">66.59</font></td>
+                </tr>
+                <tr>
+                    <td align="center">MutualNet<br>SAN</td>
+                    <td align="center">58<br>56</td>
+                    <td align="center">64.3<br><font color="red">65.07</font></td>
+                </tr>
+            </table>
+        </td>
+        <td width="40%" height="100%">
+            <img src="fig/comparison.png" />
+        </td>
+    </tr>
+</table>
 
 We observe that SAN surpasses MutualNet in most computational resource levels by merely switching the input resolution, without further tuing the network width. More importantly, SAN could perform dynamic inference under the desired computational budget in one run, while MutualNet first output a query table by running all possible configurations and then search the result from the query table.
 
