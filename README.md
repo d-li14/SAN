@@ -119,7 +119,9 @@ Manually set the scale encoding [here](https://github.com/d-li14/SAN/blob/master
 
 ## Comparison to MutualNet
 
-[MutualNet: Adaptive ConvNet via Mutual Learning from Network Width and Resolution](https://arxiv.org/abs/1909.12978) is accpepted to ECCV 2020 as **oral**, which highly coincides with our SAN regarding the motivation. We provide a head-to-head comparison of top-1 validation accuracy on ImageNet in the following, based on the common MobileNetV2 backbone.
+[MutualNet: Adaptive ConvNet via Mutual Learning from Network Width and Resolution](https://arxiv.org/abs/1909.12978) is accpepted to ECCV 2020 as oral. MutualNet and SAN are contemporary works sharing the similar motivation, regarding to switchable resolution during inference. We provide a comparison of top-1 validation accuracy on ImageNet with the same FLOPs, based on the common MobileNetV2 backbone.
+
+Note that MutualNet training is based on the resolution range of {224, 192, 160, 128} with 4 network widths, while SAN training is based on the resolution range of {224, 192, 160, 128, 96} without tuning the network width, so the configuratuon is different in this comparison.
 
 <table>
     <tr>
@@ -194,7 +196,6 @@ Manually set the scale encoding [here](https://github.com/d-li14/SAN/blob/master
 </table>
 
 
-We observe that SAN surpasses MutualNet in most computational resource levels by merely switching the input resolution, without further tuing the network width. More importantly, SAN could perform dynamic inference under the desired computational budget in one run, while MutualNet first output a query table by running all possible configurations and then search the result from the query table.
 
 ## Citation
 
